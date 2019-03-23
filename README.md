@@ -1,4 +1,4 @@
-# jquery.codeIt
+# jquery.mailIt
 
 A simple jquery plugin that displays e-mail addresses that are obfuscated in the source code.
 
