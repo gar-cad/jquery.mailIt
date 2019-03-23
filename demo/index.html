@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>jquery.mailIt</title>
+		<link href='http://fonts.googleapis.com/css?family=Tenor+Sans' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="index-src/main.css">
+		<script src="http://code.jquery.com/jquery-2.0.1.min.js"></script>
+		<script src="src/jquery.mailIt.min.js"></script>
+		<script>
+		$(function () {
+			$('.email1').mailIt();
+			$('.email2').mailIt({dummy:'-SPAM FILTER-',at:'-at-',dot:'-dot-'});
+		});
+		</script>
+		<style>
+			
+		</style>
+	</head>
+	<body>
+		<div id="container">
+			<header>
+				<span class="version">jquery.mailIt plugin: Version 1.1</span>
+				<h1>jquery.mailIt</h1>
+				<h2>Author: <a href="https://github.com/gar-cad" rel="author">Gareth Cadwaladr</a></h2>
+			</header>
+			<ol>
+				<li><a href="#basic">Basic use</a></li>
+				<li><a href="#custom">Custom parameters</a></li>
+			</ol>
+			<section class="example" id="basic">
+				<h1>Basic use</h1>
+				<h2>Example</h2>
+				<section class="display">
+					<span class="email1">anEmailAddress[at]domain.com</span><br>
+					<span class="email1">anotherEmailAddress[at]domain[dot]com</span><br>
+					<span class="email1">yetAnother<del>-REMOVE-THIS-</del>EmailAddress[at]domain[dot]com</span>
+				</section>
+				<h2>html</h2>
+				<section class="code">
+					<code>
+					&lt;span class="email1"&gt;anEmailAddress[at]domain.com&lt;/span&gt;<br>
+					&lt;span class="email1"&gt;anotherEmailAddress[at]domain[dot]com&lt;/span&gt;<br>
+					&lt;span class="email1"&gt;yetAnother&lt;del&gt;-REMOVE-THIS-&lt;/del&gt;EmailAddress[at]domain[dot]com&lt;/span&gt;
+					</code>
+				</section>
+				<h2>javascript</h2>
+				<section class="code">
+					<code>
+					&lt;script src="http://code.jquery.com/jquery-2.0.1.min.js"&gt;&lt;/script&gt;<br>
+					&lt;script src="src/jquery.mailIt.min.js"&gt;&lt;/script&gt;<br>
+					&lt;script&gt;<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;$(function () {<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$('.email1').mailIt();<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;});<br>
+					&lt;/script&gt;
+					</code>
+				</section>
+				<a href="#container" class="topLink">Top of page</a>
+			</section>
+			<section class="example" id="custom">
+				<h1>Custom parameters</h1>
+				<h2>Example</h2>
+				<section class="display">
+					<span class="email2">anEmailAddress-at-domain.com</span><br>
+					<span class="email2">anotherEmailAddress-at-domain-dot-com</span><br>
+					<span class="email2">yetAnother<del>-SPAM FILTER-</del>EmailAddress-at-domain-dot-com</span>
+				</section>
+				<h2>html</h2>
+				<section class="code">
+					<code>
+					&lt;span class="email2"&gt;anEmailAddress-at-domain.com&lt;/span&gt;<br>
+					&lt;span class="email2"&gt;anotherEmailAddress-at-domain-dot-com&lt;/span&gt;<br>
+					&lt;span class="email2"&gt;yetAnother&lt;del&gt;-SPAM FILTER-&lt;/del&gt;EmailAddress-at-domain-dot-com&lt;/span&gt;
+					</code>
+				</section>
+				<h2>javascript</h2>
+				<section class="code">
+					<code>
+					&lt;script src="http://code.jquery.com/jquery-2.0.1.min.js"&gt;&lt;/script&gt;<br>
+					&lt;script src="src/jquery.mailIt.min.js"&gt;&lt;/script&gt;<br>
+					&lt;script&gt;<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;$(function () {<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$('.email2').mailIt({dummy:'-SPAM FILTER-',at:'-at-',dot:'-dot-'});<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;});<br>
+					&lt;/script&gt;
+					</code>
+				</section>
+				<a href="#container" class="topLink">Top of page</a>
+			</section>
+			<footer>
+				&copy; 2013 Gareth Cadwaladr
+			</footer>
+		</div>
+	</body>
+</html>
